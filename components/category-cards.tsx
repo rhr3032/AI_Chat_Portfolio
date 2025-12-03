@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { User, Briefcase, Layers, Sparkles, Mail, Video, MapPin, FileText } from "lucide-react"
+import { motion } from "framer-motion"
 import type { CategoryKey } from "./portfolio-hero"
 
 interface CategoryCardsProps {
@@ -13,94 +14,132 @@ const categories: {
   key: CategoryKey
   label: string
   icon: React.ReactNode
-  iconColor: string
-  bgColor: string
+  gradient: string
+  glowColor: string
 }[] = [
   {
     key: "me",
     label: "Me",
-    icon: <User className="w-5 h-5" />,
-    iconColor: "text-violet-500",
-    bgColor: "bg-violet-50",
+    icon: <User className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-violet-500/20 to-purple-500/20",
+    glowColor: "rgba(139, 92, 246, 0.3)",
   },
   {
     key: "projects",
     label: "Projects",
-    icon: <Briefcase className="w-5 h-5" />,
-    iconColor: "text-blue-500",
-    bgColor: "bg-blue-50",
+    icon: <Briefcase className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-cyan-500/20 to-blue-500/20",
+    glowColor: "rgba(0, 245, 255, 0.3)",
   },
   {
     key: "skills",
     label: "Skills",
-    icon: <Layers className="w-5 h-5" />,
-    iconColor: "text-emerald-500",
-    bgColor: "bg-emerald-50",
+    icon: <Layers className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-emerald-500/20 to-teal-500/20",
+    glowColor: "rgba(16, 185, 129, 0.3)",
   },
   {
     key: "fun",
     label: "Fun",
-    icon: <Sparkles className="w-5 h-5" />,
-    iconColor: "text-amber-500",
-    bgColor: "bg-amber-50",
+    icon: <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-amber-500/20 to-orange-500/20",
+    glowColor: "rgba(245, 158, 11, 0.3)",
   },
   {
     key: "contact",
     label: "Contact",
-    icon: <Mail className="w-5 h-5" />,
-    iconColor: "text-pink-500",
-    bgColor: "bg-pink-50",
+    icon: <Mail className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-pink-500/20 to-rose-500/20",
+    glowColor: "rgba(236, 72, 153, 0.3)",
   },
   {
     key: "video",
     label: "Video",
-    icon: <Video className="w-5 h-5" />,
-    iconColor: "text-red-500",
-    bgColor: "bg-red-50",
+    icon: <Video className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-red-500/20 to-pink-500/20",
+    glowColor: "rgba(239, 68, 68, 0.3)",
   },
   {
     key: "location",
     label: "Location",
-    icon: <MapPin className="w-5 h-5" />,
-    iconColor: "text-cyan-500",
-    bgColor: "bg-cyan-50",
+    icon: <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-cyan-400/20 to-sky-500/20",
+    glowColor: "rgba(34, 211, 238, 0.3)",
   },
   {
     key: "resume",
     label: "Resume",
-    icon: <FileText className="w-5 h-5" />,
-    iconColor: "text-indigo-500",
-    bgColor: "bg-indigo-50",
+    icon: <FileText className="w-4 h-4 sm:w-5 sm:h-5" />,
+    gradient: "from-indigo-500/20 to-violet-500/20",
+    glowColor: "rgba(99, 102, 241, 0.3)",
   },
 ]
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.06,
+      delayChildren: 0.5
+    }
+  }
+}
+
+const cardVariants = {
+  hidden: { 
+    opacity: 0, 
+    y: 30,
+    scale: 0.8
+  },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    scale: 1,
+    transition: {
+      type: "spring",
+      stiffness: 260,
+      damping: 20
+    }
+  }
+}
+
 export function CategoryCards({ onCategoryClick, activeCategory }: CategoryCardsProps) {
   return (
-    <div className="flex flex-col items-center gap-3">
+    <motion.div 
+      className="flex flex-col items-center gap-1.5 sm:gap-2"
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
       {/* First Row - 5 cards */}
-      <div className="flex flex-wrap justify-center gap-3">
-        {categories.slice(0, 5).map((category) => (
-          <CategoryCard
-            key={category.key}
-            category={category}
-            isActive={activeCategory === category.key}
-            onClick={() => onCategoryClick(category.key)}
-          />
+      <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2">
+        {categories.slice(0, 5).map((category, index) => (
+          <motion.div key={category.key} variants={cardVariants}>
+            <CategoryCard
+              category={category}
+              isActive={activeCategory === category.key}
+              onClick={() => onCategoryClick(category.key)}
+              index={index}
+            />
+          </motion.div>
         ))}
       </div>
 
       {/* Second Row - 3 cards */}
-      <div className="flex flex-wrap justify-center gap-3">
-        {categories.slice(5).map((category) => (
-          <CategoryCard
-            key={category.key}
-            category={category}
-            isActive={activeCategory === category.key}
-            onClick={() => onCategoryClick(category.key)}
-          />
+      <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2">
+        {categories.slice(5).map((category, index) => (
+          <motion.div key={category.key} variants={cardVariants}>
+            <CategoryCard
+              category={category}
+              isActive={activeCategory === category.key}
+              onClick={() => onCategoryClick(category.key)}
+              index={index + 5}
+            />
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
@@ -109,38 +148,102 @@ interface CategoryCardProps {
     key: CategoryKey
     label: string
     icon: React.ReactNode
-    iconColor: string
-    bgColor: string
+    gradient: string
+    glowColor: string
   }
   isActive: boolean
   onClick: () => void
+  index: number
 }
 
-function CategoryCard({ category, isActive, onClick }: CategoryCardProps) {
+function CategoryCard({ category, isActive, onClick, index }: CategoryCardProps) {
   return (
-    <button
+    <motion.button
       onClick={onClick}
-      className={`group relative flex flex-col items-center justify-center w-[100px] h-[88px] md:w-[115px] md:h-[95px] rounded-2xl border transition-all duration-300 ${
-        isActive
-          ? "bg-white border-gray-200 shadow-md"
-          : "bg-white/80 border-gray-100 hover:border-gray-200 hover:shadow-sm hover:bg-white"
-      }`}
+      whileHover={{ 
+        scale: 1.1, 
+        y: -5,
+        transition: { type: "spring", stiffness: 400, damping: 17 }
+      }}
+      whileTap={{ scale: 0.95 }}
+      animate={isActive ? {
+        scale: 1.05,
+        boxShadow: `0 12px 40px ${category.glowColor}`,
+      } : {}}
+      className={`group relative flex flex-col items-center justify-center 
+        w-[60px] h-[55px] 
+        sm:w-[75px] sm:h-[68px] 
+        md:w-[85px] md:h-[75px] 
+        lg:w-[100px] lg:h-[85px] 
+        rounded-xl sm:rounded-2xl 
+        transition-colors duration-300 overflow-hidden`}
+      style={{
+        background: isActive
+          ? "linear-gradient(165deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%)"
+          : "linear-gradient(165deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0.06) 100%)",
+        backdropFilter: "blur(40px) saturate(180%)",
+        WebkitBackdropFilter: "blur(40px) saturate(180%)",
+        border: isActive 
+          ? `1px solid ${category.glowColor.replace("0.3", "0.4")}`
+          : "1px solid rgba(255, 255, 255, 0.1)",
+        boxShadow: isActive 
+          ? `0 8px 32px ${category.glowColor}, 0 0 0 0.5px rgba(255, 255, 255, 0.15) inset, 0 2px 4px rgba(255, 255, 255, 0.1) inset`
+          : "0 4px 24px rgba(0, 0, 0, 0.2), 0 0 0 0.5px rgba(255, 255, 255, 0.08) inset, 0 1px 2px rgba(255, 255, 255, 0.06) inset"
+      }}
     >
-      {/* Icon Container with light colored background */}
-      <div
-        className={`flex items-center justify-center w-10 h-10 rounded-xl ${category.bgColor} ${category.iconColor} transition-all duration-300 group-hover:scale-105`}
+      {/* Background Gradient */}
+      <motion.div 
+        className={`absolute inset-0 bg-gradient-to-br ${category.gradient}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isActive ? 1 : 0 }}
+        whileHover={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+      />
+
+      {/* Icon Container - iOS 26 Style */}
+      <motion.div
+        className={`relative z-10 flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-lg`}
+        whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
+        animate={isActive ? { scale: 1.1 } : {}}
+        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        style={{
+          background: `linear-gradient(145deg, ${category.glowColor.replace("0.3", "0.25")} 0%, ${category.glowColor.replace("0.3", "0.1")} 100%)`,
+          backdropFilter: "blur(10px)",
+          boxShadow: isActive 
+            ? `0 0 20px ${category.glowColor}, inset 0 1px 0 rgba(255, 255, 255, 0.2)` 
+            : "inset 0 1px 0 rgba(255, 255, 255, 0.1)"
+        }}
       >
-        {category.icon}
-      </div>
+        <span className={`transition-colors duration-300 ${
+          isActive ? "text-white drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]" : "text-white/70 group-hover:text-white"
+        }`}>
+          {category.icon}
+        </span>
+      </motion.div>
 
       {/* Label */}
-      <span
-        className={`mt-2 text-sm font-medium transition-colors duration-300 ${
-          isActive ? "text-gray-800" : "text-gray-500 group-hover:text-gray-700"
+      <motion.span
+        className={`relative z-10 mt-1 sm:mt-1.5 md:mt-2 text-[10px] sm:text-xs md:text-sm font-medium ${
+          isActive ? "text-white" : "text-white/60 group-hover:text-white/90"
         }`}
+        animate={isActive ? { y: 0 } : {}}
       >
         {category.label}
-      </span>
-    </button>
+      </motion.span>
+
+      {/* Shimmer Effect */}
+      <motion.div 
+        className="absolute inset-0 pointer-events-none"
+        initial={{ x: "-100%", opacity: 0 }}
+        whileHover={{ 
+          x: "100%", 
+          opacity: 0.3,
+          transition: { duration: 0.6, ease: "easeInOut" }
+        }}
+        style={{
+          background: "linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%)",
+        }}
+      />
+    </motion.button>
   )
 }

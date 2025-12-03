@@ -1,6 +1,7 @@
 "use client"
 
-import { X, Bot, User } from "lucide-react"
+import { X, Bot, User, Sparkles } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 interface Message {
   role: "user" | "assistant"
@@ -14,55 +15,146 @@ interface AiChatBubbleProps {
 
 export function AiChatBubble({ messages, onClose }: AiChatBubbleProps) {
   return (
-    <div className="relative animate-in slide-in-from-bottom-4 fade-in duration-500 ease-out">
-      <div className="relative bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+    <motion.div 
+      className="relative"
+      initial={{ opacity: 0, y: 30, scale: 0.9 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: -20, scale: 0.9 }}
+      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <motion.div 
+        className="relative rounded-2xl sm:rounded-3xl overflow-hidden liquid-glass-elevated"
+        style={{
+          background: "linear-gradient(165deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%)",
+          backdropFilter: "blur(60px) saturate(180%)",
+          WebkitBackdropFilter: "blur(60px) saturate(180%)",
+          border: "1px solid rgba(255, 255, 255, 0.15)",
+          boxShadow: "0 16px 64px rgba(0, 0, 0, 0.35), 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset, 0 4px 8px rgba(255, 255, 255, 0.1) inset"
+        }}
+      >
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 bg-gradient-to-r from-indigo-100 to-purple-100">
-          <div className="flex items-center gap-2 text-indigo-700">
-            <div className="p-1.5 bg-indigo-200 rounded-lg">
-              <Bot className="w-5 h-5" />
+        <motion.div 
+          className="flex items-center justify-between px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          style={{
+            background: "linear-gradient(135deg, rgba(0, 245, 255, 0.08) 0%, rgba(191, 0, 255, 0.08) 100%)",
+            borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
+          }}
+        >
+          <div className="flex items-center gap-2 sm:gap-3">
+            <motion.div 
+              className="p-1.5 sm:p-2 rounded-xl"
+              animate={{ rotate: [0, 5, -5, 0] }}
+              transition={{ duration: 2, repeat: Infinity }}
+              style={{
+                background: "linear-gradient(145deg, rgba(0, 245, 255, 0.2) 0%, rgba(191, 0, 255, 0.2) 100%)",
+                backdropFilter: "blur(10px)",
+                boxShadow: "0 0 15px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
+              }}
+            >
+              <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400" />
+            </motion.div>
+            <div>
+              <span className="font-semibold text-white text-sm sm:text-base">AI Assistant</span>
+              <motion.span 
+                className="text-[10px] sm:text-xs text-cyan-400/60 block"
+                animate={{ opacity: [0.6, 1, 0.6] }}
+                transition={{ duration: 2, repeat: Infinity }}
+              >
+                Powered by Gemini
+              </motion.span>
             </div>
-            <span className="font-semibold">AI Assistant</span>
           </div>
-          <button
+          <motion.button
             onClick={onClose}
-            className="p-1.5 rounded-lg hover:bg-white/50 transition-colors text-indigo-700"
+            whileHover={{ scale: 1.1, rotate: 90 }}
+            whileTap={{ scale: 0.9 }}
+            className="p-1.5 sm:p-2 rounded-xl transition-all duration-300 hover:bg-white/10 text-white/60 hover:text-white"
             aria-label="Close chat"
           >
-            <X className="w-4 h-4" />
-          </button>
-        </div>
+            <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+          </motion.button>
+        </motion.div>
 
         {/* Messages Area */}
-        <div className="p-5 space-y-4 max-h-[400px] overflow-y-auto">
-          {messages.map((message, index) => (
-            <div
-              key={index}
-              className={`flex gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}
-            >
-              {message.role === "assistant" && (
-                <div className="flex-shrink-0 w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
-                  <Bot className="w-4 h-4 text-indigo-600" />
-                </div>
-              )}
-              <div
-                className={`max-w-[80%] p-3 rounded-2xl ${
-                  message.role === "user"
-                    ? "bg-indigo-500 text-white rounded-br-sm"
-                    : "bg-gray-100 text-gray-800 rounded-bl-sm"
-                }`}
+        <div className="p-3 sm:p-4 md:p-5 space-y-3 sm:space-y-4 max-h-[250px] sm:max-h-[350px] md:max-h-[400px] overflow-y-auto">
+          <AnimatePresence mode="popLayout">
+            {messages.map((message, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20, scale: 0.9 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ 
+                  duration: 0.4, 
+                  delay: index * 0.1,
+                  ease: [0.16, 1, 0.3, 1]
+                }}
+                className={`flex gap-2 sm:gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`}
               >
-                <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
-              </div>
-              {message.role === "user" && (
-                <div className="flex-shrink-0 w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
-                  <User className="w-4 h-4 text-white" />
-                </div>
-              )}
-            </div>
-          ))}
+                {message.role === "assistant" && (
+                  <motion.div 
+                    className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 30, delay: index * 0.1 + 0.2 }}
+                    style={{
+                      background: "linear-gradient(145deg, rgba(0, 245, 255, 0.2) 0%, rgba(191, 0, 255, 0.2) 100%)",
+                      backdropFilter: "blur(10px)",
+                      boxShadow: "0 0 10px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15)"
+                    }}
+                  >
+                    <Bot className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-cyan-400" />
+                  </motion.div>
+                )}
+                <motion.div
+                  whileHover={{ scale: 1.02 }}
+                  className={`max-w-[85%] sm:max-w-[80%] p-2.5 sm:p-3 md:p-4 rounded-xl sm:rounded-2xl ${
+                    message.role === "user"
+                      ? "rounded-br-sm"
+                      : "rounded-bl-sm"
+                  }`}
+                  style={{
+                    background: message.role === "user"
+                      ? "linear-gradient(145deg, rgba(0, 245, 255, 0.25) 0%, rgba(0, 122, 255, 0.25) 100%)"
+                      : "linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%)",
+                    backdropFilter: "blur(20px)",
+                    border: message.role === "user"
+                      ? "1px solid rgba(0, 245, 255, 0.25)"
+                      : "1px solid rgba(255, 255, 255, 0.08)",
+                    boxShadow: message.role === "user"
+                      ? "0 4px 15px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)"
+                      : "0 2px 10px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05)"
+                  }}
+                >
+                  <p className={`text-xs sm:text-sm leading-relaxed whitespace-pre-wrap ${
+                    message.role === "user" ? "text-white" : "text-white/80"
+                  }`}>
+                    {message.content}
+                  </p>
+                </motion.div>
+                {message.role === "user" && (
+                  <motion.div 
+                    className="flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ type: "spring", stiffness: 500, damping: 30, delay: index * 0.1 + 0.2 }}
+                    style={{
+                      background: "linear-gradient(145deg, rgba(0, 245, 255, 0.35) 0%, rgba(0, 122, 255, 0.35) 100%)",
+                      backdropFilter: "blur(10px)",
+                      boxShadow: "0 0 10px rgba(0, 245, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
+                    }}
+                  >
+                    <User className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white" />
+                  </motion.div>
+                )}
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   )
 }

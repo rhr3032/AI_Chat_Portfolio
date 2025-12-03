@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedBackground } from "./animated-background"
 import { ProfileSection } from "./profile-section"
 import { SearchBar } from "./search-bar"
@@ -14,6 +15,29 @@ export type CategoryKey = "me" | "projects" | "skills" | "fun" | "contact" | "vi
 interface Message {
   role: "user" | "assistant"
   content: string
+}
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1
+    }
+  }
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.16, 1, 0.3, 1]
+    }
+  }
 }
 
 export function PortfolioHero() {
@@ -39,22 +63,15 @@ export function PortfolioHero() {
 
   const handleSearch = async () => {
     if (searchQuery.trim()) {
-      // Close any category chat
       setActiveChat(null)
       setShowResponse(false)
-      
-      // Show AI chat mode
       setIsAiChat(true)
       
-      // Add user message
       const userMessage: Message = { role: "user", content: searchQuery }
       setMessages((prev) => [...prev, userMessage])
-      
-      // Show typing indicator
       setIsTyping(true)
       
       try {
-        // Call AI API
         const response = await fetch("/api/chat", {
           method: "POST",
           headers: {
@@ -68,11 +85,9 @@ export function PortfolioHero() {
         setIsTyping(false)
         
         if (data.response) {
-          // Add AI response
           const aiMessage: Message = { role: "assistant", content: data.response }
           setMessages((prev) => [...prev, aiMessage])
         } else if (data.error) {
-          // Show actual error message for debugging
           console.error("API Error:", data)
           const errorMessage: Message = { 
             role: "assistant", 
@@ -90,7 +105,6 @@ export function PortfolioHero() {
         setMessages((prev) => [...prev, errorMessage])
       }
       
-      // Clear search query
       setSearchQuery("")
     }
   }
@@ -103,34 +117,86 @@ export function PortfolioHero() {
     setMessages([])
   }
 
+  const hasActiveModal = showResponse || isTyping || (isAiChat && messages.length > 0)
+
   return (
-    <div className="relative min-h-screen w-full bg-white">
+    <div className="relative w-full min-h-screen safe-area-inset">
       <AnimatedBackground />
 
-      <div className="relative z-10 flex flex-col items-center px-4 py-8 md:py-12 lg:py-16">
-        <ProfileSection />
+      {/* Main Content - Uses natural document scroll */}
+      <motion.div 
+        className="relative z-10 flex flex-col items-center w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6 pb-16 sm:pb-20"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {/* Top Section - Profile */}
+        <motion.div 
+          className="w-full max-w-4xl mx-auto"
+          variants={itemVariants}
+        >
+          <ProfileSection />
+        </motion.div>
 
-        <div className="mt-8 w-full max-w-xl">
+        {/* Search Bar */}
+        <motion.div 
+          className="w-full max-w-[90vw] sm:max-w-md md:max-w-lg lg:max-w-xl"
+          variants={itemVariants}
+        >
           <SearchBar value={searchQuery} onChange={setSearchQuery} onSubmit={handleSearch} />
-        </div>
+        </motion.div>
 
-        <div className="mt-6 w-full max-w-xl min-h-[100px]">
-          {isTyping && <TypingIndicator />}
-          {showResponse && activeChat && <ChatBubble category={activeChat} onClose={handleCloseChat} />}
-          {isAiChat && messages.length > 0 && <AiChatBubble messages={messages} onClose={handleCloseChat} />}
-        </div>
+        {/* Chat/Modal Area */}
+        <motion.div 
+          className={`mt-3 sm:mt-6 w-full max-w-[92vw] sm:max-w-md md:max-w-lg lg:max-w-xl ${hasActiveModal ? '' : 'min-h-[20px]'}`}
+          layout
+          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <AnimatePresence mode="wait">
+            {isTyping && (
+              <motion.div
+                key="typing"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <TypingIndicator />
+              </motion.div>
+            )}
+            {showResponse && activeChat && (
+              <motion.div
+                key="chat"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <ChatBubble category={activeChat} onClose={handleCloseChat} />
+              </motion.div>
+            )}
+            {isAiChat && messages.length > 0 && (
+              <motion.div
+                key="ai-chat"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+              >
+                <AiChatBubble messages={messages} onClose={handleCloseChat} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
 
-        <div className="mt-6 w-full max-w-3xl">
+        {/* Category Cards - Always visible */}
+        <motion.div 
+          className="mt-3 sm:mt-6 w-full max-w-[95vw] sm:max-w-2xl lg:max-w-3xl"
+          variants={itemVariants}
+        >
           <CategoryCards onCategoryClick={handleCategoryClick} activeCategory={activeChat} />
-        </div>
-
-        {/* Watermark */}
-        <div className="mt-12 select-none">
-          <span className="text-[120px] md:text-[180px] font-bold text-gray-100 tracking-tight opacity-60">
-            rhr3032
-          </span>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   )
 }

@@ -7,15 +7,15 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Raisul R. | Web & UI/UX Designer",
+  title: "Raisul R. | Futuristic AI Portfolio",
   description:
-    "Personal portfolio of Raisul R. - A passionate Web & UI/UX Designer crafting beautiful digital experiences.",
-  keywords: ["UI/UX Designer", "Web Designer", "Portfolio", "Raisul R."],
+    "Personal portfolio of Raisul R. - A passionate Web & UI/UX Designer crafting beautiful digital experiences with cutting-edge AI.",
+  keywords: ["UI/UX Designer", "Web Designer", "Portfolio", "Raisul R.", "AI", "Futuristic"],
     generator: 'v0.app'
 }
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
+  themeColor: "#0a0a1a",
   width: "device-width",
   initialScale: 1,
 }
@@ -26,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} font-sans antialiased`}>
+    <html lang="en" className="dark" style={{ height: 'auto', minHeight: '100%' }}>
+      <body className={`${inter.variable} font-sans antialiased`} style={{ height: 'auto', minHeight: '100%' }}>
         {children}
         <Analytics />
       </body>
