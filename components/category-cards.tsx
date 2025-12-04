@@ -80,8 +80,8 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.06,
-      delayChildren: 0.5
+      staggerChildren: 0.03,
+      delayChildren: 0.2
     }
   }
 }
@@ -89,17 +89,14 @@ const containerVariants = {
 const cardVariants = {
   hidden: { 
     opacity: 0, 
-    y: 30,
-    scale: 0.8
+    y: 15
   },
   visible: { 
     opacity: 1, 
     y: 0,
-    scale: 1,
     transition: {
-      type: "spring",
-      stiffness: 260,
-      damping: 20
+      duration: 0.25,
+      ease: [0.25, 0.1, 0.25, 1] as const
     }
   }
 }
@@ -160,23 +157,15 @@ function CategoryCard({ category, isActive, onClick, index }: CategoryCardProps)
   return (
     <motion.button
       onClick={onClick}
-      whileHover={{ 
-        scale: 1.1, 
-        y: -5,
-        transition: { type: "spring", stiffness: 400, damping: 17 }
-      }}
-      whileTap={{ scale: 0.95 }}
-      animate={isActive ? {
-        scale: 1.05,
-        boxShadow: `0 12px 40px ${category.glowColor}`,
-      } : {}}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.98 }}
       className={`group relative flex flex-col items-center justify-center 
         w-[60px] h-[55px] 
         sm:w-[75px] sm:h-[68px] 
         md:w-[85px] md:h-[75px] 
         lg:w-[100px] lg:h-[85px] 
         rounded-xl sm:rounded-2xl 
-        transition-colors duration-300 overflow-hidden`}
+        transition-all duration-200 overflow-hidden`}
       style={{
         background: isActive
           ? "linear-gradient(165deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%)"
@@ -201,11 +190,8 @@ function CategoryCard({ category, isActive, onClick, index }: CategoryCardProps)
       />
 
       {/* Icon Container - iOS 26 Style */}
-      <motion.div
-        className={`relative z-10 flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-lg`}
-        whileHover={{ scale: 1.2, rotate: [0, -10, 10, 0] }}
-        animate={isActive ? { scale: 1.1 } : {}}
-        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      <div
+        className={`relative z-10 flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-lg transition-transform duration-200 ${isActive ? 'scale-110' : 'group-hover:scale-110'}`}
         style={{
           background: `linear-gradient(145deg, ${category.glowColor.replace("0.3", "0.25")} 0%, ${category.glowColor.replace("0.3", "0.1")} 100%)`,
           backdropFilter: "blur(10px)",
@@ -219,27 +205,20 @@ function CategoryCard({ category, isActive, onClick, index }: CategoryCardProps)
         }`}>
           {category.icon}
         </span>
-      </motion.div>
+      </div>
 
       {/* Label */}
-      <motion.span
-        className={`relative z-10 mt-1 sm:mt-1.5 md:mt-2 text-[10px] sm:text-xs md:text-sm font-medium ${
+      <span
+        className={`relative z-10 mt-1 sm:mt-1.5 md:mt-2 text-[10px] sm:text-xs md:text-sm font-medium transition-colors duration-200 ${
           isActive ? "text-white" : "text-white/60 group-hover:text-white/90"
         }`}
-        animate={isActive ? { y: 0 } : {}}
       >
         {category.label}
-      </motion.span>
+      </span>
 
       {/* Shimmer Effect */}
-      <motion.div 
-        className="absolute inset-0 pointer-events-none"
-        initial={{ x: "-100%", opacity: 0 }}
-        whileHover={{ 
-          x: "100%", 
-          opacity: 0.3,
-          transition: { duration: 0.6, ease: "easeInOut" }
-        }}
+      <div 
+        className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300"
         style={{
           background: "linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%)",
         }}

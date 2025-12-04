@@ -22,20 +22,20 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.1
+      staggerChildren: 0.08,
+      delayChildren: 0.05
     }
   }
 }
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 15 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
-      ease: [0.16, 1, 0.3, 1]
+      duration: 0.3,
+      ease: [0.25, 0.1, 0.25, 1] as const
     }
   }
 }
@@ -150,16 +150,16 @@ export function PortfolioHero() {
         <motion.div 
           className={`mt-3 sm:mt-6 w-full max-w-[92vw] sm:max-w-md md:max-w-lg lg:max-w-xl ${hasActiveModal ? '' : 'min-h-[20px]'}`}
           layout
-          transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
         >
           <AnimatePresence mode="wait">
             {isTyping && (
               <motion.div
                 key="typing"
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.15 }}
               >
                 <TypingIndicator />
               </motion.div>
@@ -167,10 +167,10 @@ export function PortfolioHero() {
             {showResponse && activeChat && (
               <motion.div
                 key="chat"
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.15 }}
               >
                 <ChatBubble category={activeChat} onClose={handleCloseChat} />
               </motion.div>
@@ -178,10 +178,10 @@ export function PortfolioHero() {
             {isAiChat && messages.length > 0 && (
               <motion.div
                 key="ai-chat"
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -20 }}
-                transition={{ duration: 0.3 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.15 }}
               >
                 <AiChatBubble messages={messages} onClose={handleCloseChat} />
               </motion.div>

@@ -410,40 +410,31 @@ export function ChatBubble({ category, onClose }: ChatBubbleProps) {
   return (
     <motion.div 
       className="relative"
-      initial={{ opacity: 0, y: 30, scale: 0.9 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, y: -20, scale: 0.9 }}
-      transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 10 }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
     >
-      <motion.div 
+      <div 
         className="relative rounded-2xl sm:rounded-3xl overflow-hidden liquid-glass-elevated"
-        initial={{ boxShadow: "0 16px 64px rgba(0, 0, 0, 0.35)" }}
-        animate={{ 
-          boxShadow: `0 16px 64px rgba(0, 0, 0, 0.35), 0 0 30px ${config.glowColor}, 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset, 0 4px 8px rgba(255, 255, 255, 0.1) inset`
-        }}
-        transition={{ duration: 0.5 }}
         style={{
           background: "linear-gradient(165deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%)",
           backdropFilter: "blur(60px) saturate(180%)",
           WebkitBackdropFilter: "blur(60px) saturate(180%)",
           border: "1px solid rgba(255, 255, 255, 0.15)",
+          boxShadow: `0 16px 64px rgba(0, 0, 0, 0.35), 0 0 30px ${config.glowColor}, 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset`
         }}
       >
         {/* Header */}
-        <motion.div 
+        <div 
           className={`flex items-center justify-between px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4 bg-gradient-to-r ${config.gradient}`}
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.4 }}
           style={{
             borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
           }}
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <motion.div 
+            <div 
               className="p-1.5 sm:p-2 rounded-xl text-white"
-              whileHover={{ scale: 1.1, rotate: 5 }}
-              whileTap={{ scale: 0.95 }}
               style={{
                 background: "linear-gradient(145deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%)",
                 backdropFilter: "blur(10px)",
@@ -451,37 +442,27 @@ export function ChatBubble({ category, onClose }: ChatBubbleProps) {
               }}
             >
               {config.icon}
-            </motion.div>
-            <motion.span 
-              className="font-semibold text-white text-sm sm:text-base"
-              initial={{ opacity: 0, x: -10 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 }}
-            >
+            </div>
+            <span className="font-semibold text-white text-sm sm:text-base">
               {config.title}
-            </motion.span>
+            </span>
           </div>
           <motion.button
             onClick={onClose}
-            whileHover={{ scale: 1.1, rotate: 90 }}
-            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
             className="p-1.5 sm:p-2 rounded-xl hover:bg-white/10 transition-colors text-white/60 hover:text-white"
             aria-label="Close chat"
           >
             <X className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </motion.button>
-        </motion.div>
+        </div>
 
         {/* Content Area - with max height and scroll on mobile */}
-        <motion.div 
-          className="p-3 sm:p-4 md:p-5 text-xs sm:text-sm md:text-base max-h-[45vh] sm:max-h-[50vh] overflow-y-auto"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.4 }}
-        >
+        <div className="p-3 sm:p-4 md:p-5 text-xs sm:text-sm md:text-base max-h-[45vh] sm:max-h-[50vh] overflow-y-auto">
           {content}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </motion.div>
   )
 }

@@ -328,14 +328,14 @@ function ProfileSection() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
                 initial: {
                     opacity: 0,
-                    y: -20
+                    y: -10
                 },
                 animate: {
                     opacity: 1,
                     y: 0
                 },
                 transition: {
-                    duration: 0.6,
+                    duration: 0.3,
                     ease: "easeOut"
                 },
                 className: "text-xs sm:text-sm md:text-base font-medium text-cyan-400/80 tracking-[0.2em] sm:tracking-widest uppercase",
@@ -348,15 +348,15 @@ function ProfileSection() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
                 initial: {
                     opacity: 0,
-                    y: -30
+                    y: -15
                 },
                 animate: {
                     opacity: 1,
                     y: 0
                 },
                 transition: {
-                    duration: 0.7,
-                    delay: 0.1,
+                    duration: 0.35,
+                    delay: 0.05,
                     ease: "easeOut"
                 },
                 className: "mt-3 sm:mt-4 md:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-balance leading-tight",
@@ -374,23 +374,10 @@ function ProfileSection() {
                         lineNumber: 30,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "bg-clip-text text-transparent inline-block",
                         style: {
-                            backgroundImage: "linear-gradient(135deg, #00f5ff 0%, #bf00ff 25%, #ff00a8 50%, #00f5ff 75%, #bf00ff 100%)",
-                            backgroundSize: "200% 200%"
-                        },
-                        animate: {
-                            backgroundPosition: [
-                                "0% 50%",
-                                "100% 50%",
-                                "0% 50%"
-                            ]
-                        },
-                        transition: {
-                            duration: 5,
-                            repeat: Infinity,
-                            ease: "linear"
+                            backgroundImage: "linear-gradient(135deg, #00f5ff 0%, #bf00ff 50%, #ff00a8 100%)"
                         },
                         children: "Designer"
                     }, void 0, false, {
@@ -407,92 +394,51 @@ function ProfileSection() {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                 initial: {
                     opacity: 0,
-                    scale: 0.8
+                    scale: 0.9
                 },
                 animate: {
                     opacity: 1,
                     scale: 1
                 },
                 transition: {
-                    duration: 0.8,
-                    delay: 0.3,
-                    ease: [
-                        0.16,
-                        1,
-                        0.3,
-                        1
-                    ]
+                    duration: 0.4,
+                    delay: 0.1,
+                    ease: "easeOut"
                 },
                 className: "relative mt-6 sm:mt-8 md:mt-10 lg:mt-12 group cursor-pointer",
                 onMouseEnter: ()=>setIsHovered(true),
                 onMouseLeave: ()=>setIsHovered(false),
-                whileHover: {
-                    scale: 1.05
-                },
-                whileTap: {
-                    scale: 0.98
-                },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute inset-0 rounded-full",
-                        animate: {
-                            opacity: isHovered ? 1 : 0.5,
-                            scale: isHovered ? 1.3 : 1.15
-                        },
-                        transition: {
-                            duration: 0.7,
-                            ease: "easeOut"
-                        },
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `absolute inset-0 rounded-full transition-all duration-500 ${isHovered ? 'opacity-100 scale-[1.3]' : 'opacity-50 scale-[1.15]'}`,
                         style: {
                             background: "conic-gradient(from 0deg, rgba(0, 245, 255, 0.25), rgba(191, 0, 255, 0.25), rgba(255, 0, 168, 0.25), rgba(0, 245, 255, 0.25))",
                             filter: "blur(25px)"
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 62,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute -inset-3 sm:-inset-4 rounded-full",
-                        animate: {
-                            rotate: 360,
-                            borderColor: isHovered ? "rgba(0, 245, 255, 0.3)" : "rgba(0, 245, 255, 0.15)",
-                            scale: isHovered ? 1.05 : 1
-                        },
-                        transition: {
-                            rotate: {
-                                duration: 12,
-                                repeat: Infinity,
-                                ease: "linear"
-                            },
-                            borderColor: {
-                                duration: 0.5
-                            },
-                            scale: {
-                                duration: 0.5
-                            }
-                        },
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `absolute -inset-3 sm:-inset-4 rounded-full animate-spin transition-all duration-300 ${isHovered ? 'scale-105' : 'scale-100'}`,
                         style: {
-                            border: "1px solid rgba(0, 245, 255, 0.15)"
+                            border: `1px solid ${isHovered ? 'rgba(0, 245, 255, 0.3)' : 'rgba(0, 245, 255, 0.15)'}`,
+                            animationDuration: '12s'
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 76,
+                        lineNumber: 60,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden",
-                        animate: {
-                            boxShadow: isHovered ? "0 0 50px rgba(0, 245, 255, 0.35), 0 0 100px rgba(191, 0, 255, 0.25), inset 0 0 40px rgba(0, 0, 0, 0.4), 0 8px 32px rgba(0, 0, 0, 0.3)" : "0 0 25px rgba(0, 245, 255, 0.15), 0 0 50px rgba(191, 0, 255, 0.1), inset 0 0 25px rgba(0, 0, 0, 0.4), 0 4px 24px rgba(0, 0, 0, 0.25)"
-                        },
-                        transition: {
-                            duration: 0.5
-                        },
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full overflow-hidden transition-shadow duration-300`,
                         style: {
                             background: "linear-gradient(145deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%)",
                             backdropFilter: "blur(40px) saturate(180%)",
                             WebkitBackdropFilter: "blur(40px) saturate(180%)",
-                            border: "1.5px solid rgba(255, 255, 255, 0.15)"
+                            border: "1.5px solid rgba(255, 255, 255, 0.15)",
+                            boxShadow: isHovered ? "0 0 50px rgba(0, 245, 255, 0.35), 0 0 100px rgba(191, 0, 255, 0.25), inset 0 0 40px rgba(0, 0, 0, 0.4)" : "0 0 25px rgba(0, 245, 255, 0.15), 0 0 50px rgba(191, 0, 255, 0.1), inset 0 0 25px rgba(0, 0, 0, 0.4)"
                         },
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -502,7 +448,7 @@ function ProfileSection() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-section.tsx",
-                                lineNumber: 110,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -513,48 +459,27 @@ function ProfileSection() {
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-section.tsx",
-                                lineNumber: 117,
+                                lineNumber: 89,
                                 columnNumber: 11
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                className: "absolute inset-0 opacity-20 z-20 pointer-events-none",
-                                animate: {
-                                    x: [
-                                        "-100%",
-                                        "100%"
-                                    ]
-                                },
-                                transition: {
-                                    duration: 3,
-                                    repeat: Infinity,
-                                    ease: "linear"
-                                },
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute inset-0 opacity-20 z-20 pointer-events-none animate-shimmer",
                                 style: {
                                     background: "linear-gradient(45deg, transparent 25%, rgba(0, 245, 255, 0.4) 50%, transparent 75%)"
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-section.tsx",
-                                lineNumber: 126,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 94,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute -bottom-6 sm:-bottom-8 left-1/2 -translate-x-1/2 w-32 sm:w-40 md:w-48 h-16 sm:h-20 md:h-24",
-                        initial: {
-                            opacity: 0
-                        },
-                        animate: {
-                            opacity: 1
-                        },
-                        transition: {
-                            delay: 0.5,
-                            duration: 0.6
-                        },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "absolute inset-0 rounded-full opacity-35",
                             style: {
@@ -563,25 +488,25 @@ function ProfileSection() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/profile-section.tsx",
-                            lineNumber: 149,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 143,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/profile-section.tsx",
-                lineNumber: 51,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "h-6 sm:h-8 md:h-10 lg:h-12"
             }, void 0, false, {
                 fileName: "[project]/components/profile-section.tsx",
-                lineNumber: 160,
+                lineNumber: 119,
                 columnNumber: 7
             }, this)
         ]
@@ -879,25 +804,27 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.06,
-            delayChildren: 0.5
+            staggerChildren: 0.03,
+            delayChildren: 0.2
         }
     }
 };
 const cardVariants = {
     hidden: {
         opacity: 0,
-        y: 30,
-        scale: 0.8
+        y: 15
     },
     visible: {
         opacity: 1,
         y: 0,
-        scale: 1,
         transition: {
-            type: "spring",
-            stiffness: 260,
-            damping: 20
+            duration: 0.25,
+            ease: [
+                0.25,
+                0.1,
+                0.25,
+                1
+            ]
         }
     }
 };
@@ -919,17 +846,17 @@ function CategoryCards({ onCategoryClick, activeCategory }) {
                             index: index
                         }, void 0, false, {
                             fileName: "[project]/components/category-cards.tsx",
-                            lineNumber: 119,
+                            lineNumber: 116,
                             columnNumber: 13
                         }, this)
                     }, category.key, false, {
                         fileName: "[project]/components/category-cards.tsx",
-                        lineNumber: 118,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/category-cards.tsx",
-                lineNumber: 116,
+                lineNumber: 113,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -943,23 +870,23 @@ function CategoryCards({ onCategoryClick, activeCategory }) {
                             index: index + 5
                         }, void 0, false, {
                             fileName: "[project]/components/category-cards.tsx",
-                            lineNumber: 133,
+                            lineNumber: 130,
                             columnNumber: 13
                         }, this)
                     }, category.key, false, {
                         fileName: "[project]/components/category-cards.tsx",
-                        lineNumber: 132,
+                        lineNumber: 129,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/components/category-cards.tsx",
-                lineNumber: 130,
+                lineNumber: 127,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/category-cards.tsx",
-        lineNumber: 109,
+        lineNumber: 106,
         columnNumber: 5
     }, this);
 }
@@ -968,28 +895,18 @@ function CategoryCard({ category, isActive, onClick, index }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
         onClick: onClick,
         whileHover: {
-            scale: 1.1,
-            y: -5,
-            transition: {
-                type: "spring",
-                stiffness: 400,
-                damping: 17
-            }
+            scale: 1.05
         },
         whileTap: {
-            scale: 0.95
+            scale: 0.98
         },
-        animate: isActive ? {
-            scale: 1.05,
-            boxShadow: `0 12px 40px ${category.glowColor}`
-        } : {},
         className: `group relative flex flex-col items-center justify-center 
         w-[60px] h-[55px] 
         sm:w-[75px] sm:h-[68px] 
         md:w-[85px] md:h-[75px] 
         lg:w-[100px] lg:h-[85px] 
         rounded-xl sm:rounded-2xl 
-        transition-colors duration-300 overflow-hidden`,
+        transition-all duration-200 overflow-hidden`,
         style: {
             background: isActive ? "linear-gradient(165deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.1) 100%)" : "linear-gradient(165deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.03) 50%, rgba(255, 255, 255, 0.06) 100%)",
             backdropFilter: "blur(40px) saturate(180%)",
@@ -1014,28 +931,11 @@ function CategoryCard({ category, isActive, onClick, index }) {
                 }
             }, void 0, false, {
                 fileName: "[project]/components/category-cards.tsx",
-                lineNumber: 195,
+                lineNumber: 184,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: `relative z-10 flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-lg`,
-                whileHover: {
-                    scale: 1.2,
-                    rotate: [
-                        0,
-                        -10,
-                        10,
-                        0
-                    ]
-                },
-                animate: isActive ? {
-                    scale: 1.1
-                } : {},
-                transition: {
-                    type: "spring",
-                    stiffness: 400,
-                    damping: 17
-                },
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `relative z-10 flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-lg transition-transform duration-200 ${isActive ? 'scale-110' : 'group-hover:scale-110'}`,
                 style: {
                     background: `linear-gradient(145deg, ${category.glowColor.replace("0.3", "0.25")} 0%, ${category.glowColor.replace("0.3", "0.1")} 100%)`,
                     backdropFilter: "blur(10px)",
@@ -1046,51 +946,36 @@ function CategoryCard({ category, isActive, onClick, index }) {
                     children: category.icon
                 }, void 0, false, {
                     fileName: "[project]/components/category-cards.tsx",
-                    lineNumber: 217,
+                    lineNumber: 203,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/category-cards.tsx",
-                lineNumber: 204,
+                lineNumber: 193,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                className: `relative z-10 mt-1 sm:mt-1.5 md:mt-2 text-[10px] sm:text-xs md:text-sm font-medium ${isActive ? "text-white" : "text-white/60 group-hover:text-white/90"}`,
-                animate: isActive ? {
-                    y: 0
-                } : {},
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: `relative z-10 mt-1 sm:mt-1.5 md:mt-2 text-[10px] sm:text-xs md:text-sm font-medium transition-colors duration-200 ${isActive ? "text-white" : "text-white/60 group-hover:text-white/90"}`,
                 children: category.label
             }, void 0, false, {
                 fileName: "[project]/components/category-cards.tsx",
-                lineNumber: 225,
+                lineNumber: 211,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                className: "absolute inset-0 pointer-events-none",
-                initial: {
-                    x: "-100%",
-                    opacity: 0
-                },
-                whileHover: {
-                    x: "100%",
-                    opacity: 0.3,
-                    transition: {
-                        duration: 0.6,
-                        ease: "easeInOut"
-                    }
-                },
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300",
                 style: {
                     background: "linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.2) 50%, transparent 70%)"
                 }
             }, void 0, false, {
                 fileName: "[project]/components/category-cards.tsx",
-                lineNumber: 235,
+                lineNumber: 220,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/category-cards.tsx",
-        lineNumber: 161,
+        lineNumber: 158,
         columnNumber: 5
     }, this);
 }
@@ -2589,60 +2474,32 @@ function ChatBubble({ category, onClose }) {
         className: "relative",
         initial: {
             opacity: 0,
-            y: 30,
-            scale: 0.9
+            y: 15
         },
         animate: {
             opacity: 1,
-            y: 0,
-            scale: 1
+            y: 0
         },
         exit: {
             opacity: 0,
-            y: -20,
-            scale: 0.9
+            y: 10
         },
         transition: {
-            duration: 0.5,
-            ease: [
-                0.16,
-                1,
-                0.3,
-                1
-            ]
+            duration: 0.25,
+            ease: "easeOut"
         },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative rounded-2xl sm:rounded-3xl overflow-hidden liquid-glass-elevated",
-            initial: {
-                boxShadow: "0 16px 64px rgba(0, 0, 0, 0.35)"
-            },
-            animate: {
-                boxShadow: `0 16px 64px rgba(0, 0, 0, 0.35), 0 0 30px ${config.glowColor}, 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset, 0 4px 8px rgba(255, 255, 255, 0.1) inset`
-            },
-            transition: {
-                duration: 0.5
-            },
             style: {
                 background: "linear-gradient(165deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%)",
                 backdropFilter: "blur(60px) saturate(180%)",
                 WebkitBackdropFilter: "blur(60px) saturate(180%)",
-                border: "1px solid rgba(255, 255, 255, 0.15)"
+                border: "1px solid rgba(255, 255, 255, 0.15)",
+                boxShadow: `0 16px 64px rgba(0, 0, 0, 0.35), 0 0 30px ${config.glowColor}, 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset`
             },
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: `flex items-center justify-between px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4 bg-gradient-to-r ${config.gradient}`,
-                    initial: {
-                        opacity: 0,
-                        y: -10
-                    },
-                    animate: {
-                        opacity: 1,
-                        y: 0
-                    },
-                    transition: {
-                        delay: 0.2,
-                        duration: 0.4
-                    },
                     style: {
                         borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
                     },
@@ -2650,15 +2507,8 @@ function ChatBubble({ category, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-2 sm:gap-3",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "p-1.5 sm:p-2 rounded-xl text-white",
-                                    whileHover: {
-                                        scale: 1.1,
-                                        rotate: 5
-                                    },
-                                    whileTap: {
-                                        scale: 0.95
-                                    },
                                     style: {
                                         background: "linear-gradient(145deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%)",
                                         backdropFilter: "blur(10px)",
@@ -2667,42 +2517,30 @@ function ChatBubble({ category, onClose }) {
                                     children: config.icon
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-bubble.tsx",
-                                    lineNumber: 443,
+                                    lineNumber: 436,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "font-semibold text-white text-sm sm:text-base",
-                                    initial: {
-                                        opacity: 0,
-                                        x: -10
-                                    },
-                                    animate: {
-                                        opacity: 1,
-                                        x: 0
-                                    },
-                                    transition: {
-                                        delay: 0.3
-                                    },
                                     children: config.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/chat-bubble.tsx",
-                                    lineNumber: 455,
+                                    lineNumber: 446,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/chat-bubble.tsx",
-                            lineNumber: 442,
+                            lineNumber: 435,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                             onClick: onClose,
                             whileHover: {
-                                scale: 1.1,
-                                rotate: 90
+                                scale: 1.1
                             },
                             whileTap: {
-                                scale: 0.9
+                                scale: 0.95
                             },
                             className: "p-1.5 sm:p-2 rounded-xl hover:bg-white/10 transition-colors text-white/60 hover:text-white",
                             "aria-label": "Close chat",
@@ -2710,36 +2548,26 @@ function ChatBubble({ category, onClose }) {
                                 className: "w-3.5 h-3.5 sm:w-4 sm:h-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/chat-bubble.tsx",
-                                lineNumber: 471,
+                                lineNumber: 457,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/chat-bubble.tsx",
-                            lineNumber: 464,
+                            lineNumber: 450,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/chat-bubble.tsx",
-                    lineNumber: 433,
+                    lineNumber: 429,
                     columnNumber: 9
                 }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-3 sm:p-4 md:p-5 text-xs sm:text-sm md:text-base max-h-[45vh] sm:max-h-[50vh] overflow-y-auto",
-                    initial: {
-                        opacity: 0
-                    },
-                    animate: {
-                        opacity: 1
-                    },
-                    transition: {
-                        delay: 0.3,
-                        duration: 0.4
-                    },
                     children: content
                 }, void 0, false, {
                     fileName: "[project]/components/chat-bubble.tsx",
-                    lineNumber: 476,
+                    lineNumber: 462,
                     columnNumber: 9
                 }, this)
             ]
@@ -2777,147 +2605,81 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 ;
 function TypingIndicator() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-        initial: {
-            opacity: 0,
-            y: 20,
-            scale: 0.9
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "inline-flex items-center gap-2 sm:gap-3 rounded-2xl px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4",
+        style: {
+            background: "linear-gradient(165deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%)",
+            backdropFilter: "blur(50px) saturate(180%)",
+            WebkitBackdropFilter: "blur(50px) saturate(180%)",
+            border: "1px solid rgba(255, 255, 255, 0.12)",
+            boxShadow: "0 8px 32px rgba(0, 0, 0, 0.25), 0 0 0 0.5px rgba(255, 255, 255, 0.15) inset"
         },
-        animate: {
-            opacity: 1,
-            y: 0,
-            scale: 1
-        },
-        exit: {
-            opacity: 0,
-            y: -20,
-            scale: 0.9
-        },
-        transition: {
-            duration: 0.4,
-            ease: [
-                0.16,
-                1,
-                0.3,
-                1
-            ]
-        },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-            className: "inline-flex items-center gap-2 sm:gap-3 rounded-2xl px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4 liquid-glass",
-            animate: {
-                boxShadow: [
-                    "0 8px 32px rgba(0, 0, 0, 0.25), 0 0 0 0.5px rgba(255, 255, 255, 0.15) inset",
-                    "0 8px 32px rgba(0, 245, 255, 0.15), 0 0 0 0.5px rgba(255, 255, 255, 0.15) inset",
-                    "0 8px 32px rgba(0, 0, 0, 0.25), 0 0 0 0.5px rgba(255, 255, 255, 0.15) inset"
-                ]
-            },
-            transition: {
-                duration: 2,
-                repeat: Infinity
-            },
-            style: {
-                background: "linear-gradient(165deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%)",
-                backdropFilter: "blur(50px) saturate(180%)",
-                WebkitBackdropFilter: "blur(50px) saturate(180%)",
-                border: "1px solid rgba(255, 255, 255, 0.12)"
-            },
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center",
-                    animate: {
-                        rotate: [
-                            0,
-                            360
-                        ]
-                    },
-                    transition: {
-                        duration: 3,
-                        repeat: Infinity,
-                        ease: "linear"
-                    },
-                    style: {
-                        background: "linear-gradient(145deg, rgba(0, 245, 255, 0.25) 0%, rgba(191, 0, 255, 0.25) 100%)",
-                        backdropFilter: "blur(10px)",
-                        boxShadow: "0 0 15px rgba(0, 245, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
-                    },
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                        className: "w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-cyan-400"
-                    }, void 0, false, {
-                        fileName: "[project]/components/typing-indicator.tsx",
-                        lineNumber: 42,
-                        columnNumber: 11
-                    }, this)
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center animate-spin",
+                style: {
+                    background: "linear-gradient(145deg, rgba(0, 245, 255, 0.25) 0%, rgba(191, 0, 255, 0.25) 100%)",
+                    backdropFilter: "blur(10px)",
+                    boxShadow: "0 0 15px rgba(0, 245, 255, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2)",
+                    animationDuration: "3s"
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
+                    className: "w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-cyan-400"
                 }, void 0, false, {
                     fileName: "[project]/components/typing-indicator.tsx",
-                    lineNumber: 32,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex gap-1 sm:gap-1.5",
-                    children: [
-                        0,
-                        1,
-                        2
-                    ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                            className: "w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full",
-                            animate: {
-                                y: [
-                                    0,
-                                    -8,
-                                    0
-                                ],
-                                scale: [
-                                    1,
-                                    1.2,
-                                    1
-                                ]
-                            },
-                            transition: {
-                                duration: 0.6,
-                                repeat: Infinity,
-                                delay: i * 0.15,
-                                ease: "easeInOut"
-                            },
-                            style: {
-                                background: i === 0 ? "linear-gradient(135deg, #00f5ff 0%, #0066ff 100%)" : i === 1 ? "linear-gradient(135deg, #bf00ff 0%, #ff00a8 100%)" : "linear-gradient(135deg, #ff00a8 0%, #ff6b35 100%)",
-                                boxShadow: i === 0 ? "0 0 8px rgba(0, 245, 255, 0.4)" : i === 1 ? "0 0 8px rgba(191, 0, 255, 0.4)" : "0 0 8px rgba(255, 0, 168, 0.4)"
-                            }
-                        }, i, false, {
-                            fileName: "[project]/components/typing-indicator.tsx",
-                            lineNumber: 48,
-                            columnNumber: 13
-                        }, this))
-                }, void 0, false, {
-                    fileName: "[project]/components/typing-indicator.tsx",
-                    lineNumber: 46,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
-                    className: "text-white/50 text-xs sm:text-sm ml-0.5 sm:ml-1",
-                    animate: {
-                        opacity: [
-                            0.5,
-                            1,
-                            0.5
-                        ]
-                    },
-                    transition: {
-                        duration: 1.5,
-                        repeat: Infinity
-                    },
-                    children: "AI is thinking..."
-                }, void 0, false, {
-                    fileName: "[project]/components/typing-indicator.tsx",
-                    lineNumber: 77,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/typing-indicator.tsx",
-            lineNumber: 14,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/components/typing-indicator.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex gap-1 sm:gap-1.5",
+                children: [
+                    0,
+                    1,
+                    2
+                ].map((i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                        className: "w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full",
+                        animate: {
+                            y: [
+                                0,
+                                -6,
+                                0
+                            ]
+                        },
+                        transition: {
+                            duration: 0.5,
+                            repeat: Infinity,
+                            delay: i * 0.12,
+                            ease: "easeInOut"
+                        },
+                        style: {
+                            background: i === 0 ? "linear-gradient(135deg, #00f5ff 0%, #0066ff 100%)" : i === 1 ? "linear-gradient(135deg, #bf00ff 0%, #ff00a8 100%)" : "linear-gradient(135deg, #ff00a8 0%, #ff6b35 100%)",
+                            boxShadow: i === 0 ? "0 0 8px rgba(0, 245, 255, 0.4)" : i === 1 ? "0 0 8px rgba(191, 0, 255, 0.4)" : "0 0 8px rgba(255, 0, 168, 0.4)"
+                        }
+                    }, i, false, {
+                        fileName: "[project]/components/typing-indicator.tsx",
+                        lineNumber: 34,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/components/typing-indicator.tsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                className: "text-white/50 text-xs sm:text-sm ml-0.5 sm:ml-1 animate-pulse",
+                children: "AI is thinking..."
+            }, void 0, false, {
+                fileName: "[project]/components/typing-indicator.tsx",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/typing-indicator.tsx",
         lineNumber: 8,
         columnNumber: 5
@@ -2943,7 +2705,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/user.js [app-client] (ecmascript) <export default as User>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/sparkles.js [app-client] (ecmascript) <export default as Sparkles>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 "use client";
 ;
 ;
@@ -2953,51 +2714,32 @@ function AiChatBubble({ messages, onClose }) {
         className: "relative",
         initial: {
             opacity: 0,
-            y: 30,
-            scale: 0.9
+            y: 15
         },
         animate: {
             opacity: 1,
-            y: 0,
-            scale: 1
+            y: 0
         },
         exit: {
             opacity: 0,
-            y: -20,
-            scale: 0.9
+            y: 10
         },
         transition: {
-            duration: 0.5,
-            ease: [
-                0.16,
-                1,
-                0.3,
-                1
-            ]
+            duration: 0.25,
+            ease: "easeOut"
         },
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "relative rounded-2xl sm:rounded-3xl overflow-hidden liquid-glass-elevated",
             style: {
                 background: "linear-gradient(165deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(255, 255, 255, 0.08) 100%)",
                 backdropFilter: "blur(60px) saturate(180%)",
                 WebkitBackdropFilter: "blur(60px) saturate(180%)",
                 border: "1px solid rgba(255, 255, 255, 0.15)",
-                boxShadow: "0 16px 64px rgba(0, 0, 0, 0.35), 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset, 0 4px 8px rgba(255, 255, 255, 0.1) inset"
+                boxShadow: "0 16px 64px rgba(0, 0, 0, 0.35), 0 0 0 0.5px rgba(255, 255, 255, 0.2) inset"
             },
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex items-center justify-between px-3 sm:px-4 md:px-5 py-2.5 sm:py-3 md:py-4",
-                    initial: {
-                        opacity: 0,
-                        y: -10
-                    },
-                    animate: {
-                        opacity: 1,
-                        y: 0
-                    },
-                    transition: {
-                        delay: 0.2
-                    },
                     style: {
                         background: "linear-gradient(135deg, rgba(0, 245, 255, 0.08) 0%, rgba(191, 0, 255, 0.08) 100%)",
                         borderBottom: "1px solid rgba(255, 255, 255, 0.08)"
@@ -3006,20 +2748,8 @@ function AiChatBubble({ messages, onClose }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-2 sm:gap-3",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "p-1.5 sm:p-2 rounded-xl",
-                                    animate: {
-                                        rotate: [
-                                            0,
-                                            5,
-                                            -5,
-                                            0
-                                        ]
-                                    },
-                                    transition: {
-                                        duration: 2,
-                                        repeat: Infinity
-                                    },
                                     style: {
                                         background: "linear-gradient(145deg, rgba(0, 245, 255, 0.2) 0%, rgba(191, 0, 255, 0.2) 100%)",
                                         backdropFilter: "blur(10px)",
@@ -3029,12 +2759,12 @@ function AiChatBubble({ messages, onClose }) {
                                         className: "w-4 h-4 sm:w-5 sm:h-5 text-cyan-400"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ai-chat-bubble.tsx",
-                                        lineNumber: 57,
+                                        lineNumber: 52,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/ai-chat-bubble.tsx",
-                                    lineNumber: 47,
+                                    lineNumber: 44,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3044,48 +2774,36 @@ function AiChatBubble({ messages, onClose }) {
                                             children: "AI Assistant"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ai-chat-bubble.tsx",
-                                            lineNumber: 60,
+                                            lineNumber: 55,
                                             columnNumber: 15
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-[10px] sm:text-xs text-cyan-400/60 block",
-                                            animate: {
-                                                opacity: [
-                                                    0.6,
-                                                    1,
-                                                    0.6
-                                                ]
-                                            },
-                                            transition: {
-                                                duration: 2,
-                                                repeat: Infinity
-                                            },
                                             children: "Powered by Gemini"
                                         }, void 0, false, {
                                             fileName: "[project]/components/ai-chat-bubble.tsx",
-                                            lineNumber: 61,
+                                            lineNumber: 56,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ai-chat-bubble.tsx",
-                                    lineNumber: 59,
+                                    lineNumber: 54,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ai-chat-bubble.tsx",
-                            lineNumber: 46,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].button, {
                             onClick: onClose,
                             whileHover: {
-                                scale: 1.1,
-                                rotate: 90
+                                scale: 1.1
                             },
                             whileTap: {
-                                scale: 0.9
+                                scale: 0.95
                             },
                             className: "p-1.5 sm:p-2 rounded-xl transition-all duration-300 hover:bg-white/10 text-white/60 hover:text-white",
                             "aria-label": "Close chat",
@@ -3093,12 +2811,12 @@ function AiChatBubble({ messages, onClose }) {
                                 className: "w-3.5 h-3.5 sm:w-4 sm:h-4"
                             }, void 0, false, {
                                 fileName: "[project]/components/ai-chat-bubble.tsx",
-                                lineNumber: 77,
+                                lineNumber: 66,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/ai-chat-bubble.tsx",
-                            lineNumber: 70,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, this)
                     ]
@@ -3109,135 +2827,89 @@ function AiChatBubble({ messages, onClose }) {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "p-3 sm:p-4 md:p-5 space-y-3 sm:space-y-4 max-h-[250px] sm:max-h-[350px] md:max-h-[400px] overflow-y-auto",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
-                        mode: "popLayout",
-                        children: messages.map((message, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                initial: {
-                                    opacity: 0,
-                                    y: 20,
-                                    scale: 0.9
-                                },
-                                animate: {
-                                    opacity: 1,
-                                    y: 0,
-                                    scale: 1
-                                },
-                                exit: {
-                                    opacity: 0,
-                                    scale: 0.9
-                                },
-                                transition: {
-                                    duration: 0.4,
-                                    delay: index * 0.1,
-                                    ease: [
-                                        0.16,
-                                        1,
-                                        0.3,
-                                        1
-                                    ]
-                                },
-                                className: `flex gap-2 sm:gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`,
-                                children: [
-                                    message.role === "assistant" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center",
-                                        initial: {
-                                            scale: 0
-                                        },
-                                        animate: {
-                                            scale: 1
-                                        },
-                                        transition: {
-                                            type: "spring",
-                                            stiffness: 500,
-                                            damping: 30,
-                                            delay: index * 0.1 + 0.2
-                                        },
-                                        style: {
-                                            background: "linear-gradient(145deg, rgba(0, 245, 255, 0.2) 0%, rgba(191, 0, 255, 0.2) 100%)",
-                                            backdropFilter: "blur(10px)",
-                                            boxShadow: "0 0 10px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15)"
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
-                                            className: "w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-cyan-400"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ai-chat-bubble.tsx",
-                                            lineNumber: 109,
-                                            columnNumber: 21
-                                        }, this)
+                    children: messages.map((message, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                            initial: {
+                                opacity: 0,
+                                y: 10
+                            },
+                            animate: {
+                                opacity: 1,
+                                y: 0
+                            },
+                            transition: {
+                                duration: 0.2,
+                                delay: index * 0.05
+                            },
+                            className: `flex gap-2 sm:gap-3 ${message.role === "user" ? "justify-end" : "justify-start"}`,
+                            children: [
+                                message.role === "assistant" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center",
+                                    style: {
+                                        background: "linear-gradient(145deg, rgba(0, 245, 255, 0.2) 0%, rgba(191, 0, 255, 0.2) 100%)",
+                                        backdropFilter: "blur(10px)",
+                                        boxShadow: "0 0 10px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.15)"
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
+                                        className: "w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-cyan-400"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ai-chat-bubble.tsx",
-                                        lineNumber: 98,
-                                        columnNumber: 19
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        whileHover: {
-                                            scale: 1.02
-                                        },
-                                        className: `max-w-[85%] sm:max-w-[80%] p-2.5 sm:p-3 md:p-4 rounded-xl sm:rounded-2xl ${message.role === "user" ? "rounded-br-sm" : "rounded-bl-sm"}`,
-                                        style: {
-                                            background: message.role === "user" ? "linear-gradient(145deg, rgba(0, 245, 255, 0.25) 0%, rgba(0, 122, 255, 0.25) 100%)" : "linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%)",
-                                            backdropFilter: "blur(20px)",
-                                            border: message.role === "user" ? "1px solid rgba(0, 245, 255, 0.25)" : "1px solid rgba(255, 255, 255, 0.08)",
-                                            boxShadow: message.role === "user" ? "0 4px 15px rgba(0, 245, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1)" : "0 2px 10px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05)"
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: `text-xs sm:text-sm leading-relaxed whitespace-pre-wrap ${message.role === "user" ? "text-white" : "text-white/80"}`,
-                                            children: message.content
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ai-chat-bubble.tsx",
-                                            lineNumber: 132,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ai-chat-bubble.tsx",
-                                        lineNumber: 112,
-                                        columnNumber: 17
-                                    }, this),
-                                    message.role === "user" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                        className: "flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center",
-                                        initial: {
-                                            scale: 0
-                                        },
-                                        animate: {
-                                            scale: 1
-                                        },
-                                        transition: {
-                                            type: "spring",
-                                            stiffness: 500,
-                                            damping: 30,
-                                            delay: index * 0.1 + 0.2
-                                        },
-                                        style: {
-                                            background: "linear-gradient(145deg, rgba(0, 245, 255, 0.35) 0%, rgba(0, 122, 255, 0.35) 100%)",
-                                            backdropFilter: "blur(10px)",
-                                            boxShadow: "0 0 10px rgba(0, 245, 255, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2)"
-                                        },
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                            className: "w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ai-chat-bubble.tsx",
-                                            lineNumber: 150,
-                                            columnNumber: 21
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ai-chat-bubble.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 89,
                                         columnNumber: 19
                                     }, this)
-                                ]
-                            }, index, true, {
-                                fileName: "[project]/components/ai-chat-bubble.tsx",
-                                lineNumber: 85,
-                                columnNumber: 15
-                            }, this))
-                    }, void 0, false, {
-                        fileName: "[project]/components/ai-chat-bubble.tsx",
-                        lineNumber: 83,
-                        columnNumber: 11
-                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ai-chat-bubble.tsx",
+                                    lineNumber: 81,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: `max-w-[85%] sm:max-w-[80%] p-2.5 sm:p-3 md:p-4 rounded-xl sm:rounded-2xl ${message.role === "user" ? "rounded-br-sm" : "rounded-bl-sm"}`,
+                                    style: {
+                                        background: message.role === "user" ? "linear-gradient(145deg, rgba(0, 245, 255, 0.25) 0%, rgba(0, 122, 255, 0.25) 100%)" : "linear-gradient(145deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%)",
+                                        backdropFilter: "blur(20px)",
+                                        border: message.role === "user" ? "1px solid rgba(0, 245, 255, 0.25)" : "1px solid rgba(255, 255, 255, 0.08)",
+                                        boxShadow: message.role === "user" ? "0 4px 15px rgba(0, 245, 255, 0.15)" : "0 2px 10px rgba(0, 0, 0, 0.1)"
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: `text-xs sm:text-sm leading-relaxed whitespace-pre-wrap ${message.role === "user" ? "text-white" : "text-white/80"}`,
+                                        children: message.content
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ai-chat-bubble.tsx",
+                                        lineNumber: 111,
+                                        columnNumber: 17
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ai-chat-bubble.tsx",
+                                    lineNumber: 92,
+                                    columnNumber: 15
+                                }, this),
+                                message.role === "user" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex-shrink-0 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center",
+                                    style: {
+                                        background: "linear-gradient(145deg, rgba(0, 245, 255, 0.35) 0%, rgba(0, 122, 255, 0.35) 100%)",
+                                        backdropFilter: "blur(10px)",
+                                        boxShadow: "0 0 10px rgba(0, 245, 255, 0.2)"
+                                    },
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
+                                        className: "w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/ai-chat-bubble.tsx",
+                                        lineNumber: 126,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/ai-chat-bubble.tsx",
+                                    lineNumber: 118,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, index, true, {
+                            fileName: "[project]/components/ai-chat-bubble.tsx",
+                            lineNumber: 73,
+                            columnNumber: 13
+                        }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/ai-chat-bubble.tsx",
-                    lineNumber: 82,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, this)
             ]
@@ -3296,25 +2968,25 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.15,
-            delayChildren: 0.1
+            staggerChildren: 0.08,
+            delayChildren: 0.05
         }
     }
 };
 const itemVariants = {
     hidden: {
         opacity: 0,
-        y: 30
+        y: 15
     },
     visible: {
         opacity: 1,
         y: 0,
         transition: {
-            duration: 0.6,
+            duration: 0.3,
             ease: [
-                0.16,
-                1,
-                0.3,
+                0.25,
+                0.1,
+                0.25,
                 1
             ]
         }
@@ -3456,13 +3128,8 @@ function PortfolioHero() {
                         className: `mt-3 sm:mt-6 w-full max-w-[92vw] sm:max-w-md md:max-w-lg lg:max-w-xl ${hasActiveModal ? '' : 'min-h-[20px]'}`,
                         layout: true,
                         transition: {
-                            duration: 0.3,
-                            ease: [
-                                0.16,
-                                1,
-                                0.3,
-                                1
-                            ]
+                            duration: 0.2,
+                            ease: "easeOut"
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                             mode: "wait",
@@ -3470,18 +3137,17 @@ function PortfolioHero() {
                                 isTyping && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                     initial: {
                                         opacity: 0,
-                                        y: 20
+                                        y: 10
                                     },
                                     animate: {
                                         opacity: 1,
                                         y: 0
                                     },
                                     exit: {
-                                        opacity: 0,
-                                        y: -20
+                                        opacity: 0
                                     },
                                     transition: {
-                                        duration: 0.3
+                                        duration: 0.15
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$typing$2d$indicator$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypingIndicator"], {}, void 0, false, {
                                         fileName: "[project]/components/portfolio-hero.tsx",
@@ -3496,18 +3162,17 @@ function PortfolioHero() {
                                 showResponse && activeChat && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                     initial: {
                                         opacity: 0,
-                                        y: 20
+                                        y: 10
                                     },
                                     animate: {
                                         opacity: 1,
                                         y: 0
                                     },
                                     exit: {
-                                        opacity: 0,
-                                        y: -20
+                                        opacity: 0
                                     },
                                     transition: {
-                                        duration: 0.3
+                                        duration: 0.15
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$chat$2d$bubble$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ChatBubble"], {
                                         category: activeChat,
@@ -3525,18 +3190,17 @@ function PortfolioHero() {
                                 isAiChat && messages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                                     initial: {
                                         opacity: 0,
-                                        y: 20
+                                        y: 10
                                     },
                                     animate: {
                                         opacity: 1,
                                         y: 0
                                     },
                                     exit: {
-                                        opacity: 0,
-                                        y: -20
+                                        opacity: 0
                                     },
                                     transition: {
-                                        duration: 0.3
+                                        duration: 0.15
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ai$2d$chat$2d$bubble$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AiChatBubble"], {
                                         messages: messages,
