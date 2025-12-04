@@ -330,15 +330,10 @@ function ProfileSection() {
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                         className: "text-white/90",
-                        children: "UI/UX"
+                        children: "UI/UX "
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
                         lineNumber: 29,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                        fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 30,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -349,7 +344,7 @@ function ProfileSection() {
                         children: "Designer"
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 31,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, this)
                 ]
@@ -384,7 +379,7 @@ function ProfileSection() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 51,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -395,7 +390,7 @@ function ProfileSection() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 60,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -415,7 +410,7 @@ function ProfileSection() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-section.tsx",
-                                lineNumber: 82,
+                                lineNumber: 81,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -426,7 +421,7 @@ function ProfileSection() {
                                 priority: true
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-section.tsx",
-                                lineNumber: 89,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -436,13 +431,13 @@ function ProfileSection() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/profile-section.tsx",
-                                lineNumber: 98,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 69,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -455,25 +450,25 @@ function ProfileSection() {
                             }
                         }, void 0, false, {
                             fileName: "[project]/components/profile-section.tsx",
-                            lineNumber: 108,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/profile-section.tsx",
-                        lineNumber: 107,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/profile-section.tsx",
-                lineNumber: 42,
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "h-6 sm:h-8 md:h-10 lg:h-12"
             }, void 0, false, {
                 fileName: "[project]/components/profile-section.tsx",
-                lineNumber: 119,
+                lineNumber: 118,
                 columnNumber: 7
             }, this)
         ]

@@ -46,26 +46,37 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$
 ;
 ;
 const metadata = {
-    title: "Raisul R. | Web & UI/UX Designer",
-    description: "Personal portfolio of Raisul R. - A passionate Web & UI/UX Designer crafting beautiful digital experiences.",
+    title: "Raisul R. | Futuristic AI Portfolio",
+    description: "Personal portfolio of Raisul R. - A passionate Web & UI/UX Designer crafting beautiful digital experiences with cutting-edge AI.",
     keywords: [
         "UI/UX Designer",
         "Web Designer",
         "Portfolio",
-        "Raisul R."
+        "Raisul R.",
+        "AI",
+        "Futuristic"
     ],
     generator: 'v0.app'
 };
 const viewport = {
-    themeColor: "#ffffff",
+    themeColor: "#0a0a1a",
     width: "device-width",
     initialScale: 1
 };
 function RootLayout({ children }) {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("html", {
         lang: "en",
+        className: "dark",
+        style: {
+            height: 'auto',
+            minHeight: '100%'
+        },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("body", {
             className: `${__TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$inter_5901b7c6$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].variable} font-sans antialiased`,
+            style: {
+                height: 'auto',
+                minHeight: '100%'
+            },
             children: [
                 children,
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$next$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Analytics"], {}, void 0, false, {

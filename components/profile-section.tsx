@@ -26,8 +26,7 @@ export function ProfileSection() {
         transition={{ duration: 0.35, delay: 0.05, ease: "easeOut" }}
         className="mt-3 sm:mt-4 md:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-balance leading-tight"
       >
-        <span className="text-white/90">UI/UX</span>
-        <br />
+        <span className="text-white/90">UI/UX </span>
         <span 
           className="bg-clip-text text-transparent inline-block"
           style={{
